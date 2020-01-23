@@ -26,7 +26,7 @@ None
 <!--Header displays app title at the top of the page.-->
 	
    <head> 
-      <title>Test Assignment NAME</title>  
+      <title>Test Assignment</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -66,19 +66,41 @@ None
 <!--Describes the content of the pages within the app.-->
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Test Assignment NAME</h1>
+	<h1>Test Assignment</h1>
 </div>
 	
 <!--This represents the home page and contains a description of the app and its purpose.-->
 	
 <div id="content" class="w3-container" id="home">
-	<p>Welcome to your first assignment! The goal of this assignment is to [...] Ready?</p>
+	<center><p>Welcome to your first assignment! The goal of this assignment is to [...] You can access any step of this assignment using the page directory in the footer. Ready?</p>
 	
 	<!--The following button takes the user to the beginning of the assignment.-->
-	<center>
 	<a href="#one" class="w3-btn w3-grey w3-round">Get Started</a>
 	</center>
+
 	
+<!--This represents the preliminary subpage and contains the assignment rubric.-->	
+	
+<div class="page" id="rubric">
+	
+	<!--Rubric.-->
+	
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Rubric</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Your assignment will be graded on the following criteria.</p>  
+		
+		<!--The following two buttons take the user to the previous page or the next page.-->
+		<center>
+		      <a href="#home" class="w3-btn w3-black">Home</a>
+         	<a href="#two"  class="w3-btn w3-black">Next</a>
+		</center>
+    	</div>
+	
+	
+</div>
 	
 <!--This represents the first subpage and contains the first assignment step.-->	
 	
@@ -91,11 +113,12 @@ None
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p> PLACEHOLDER TEXT </p>  
+        <p>To begin this assignment, you must first [...]</p>  
 		
 		<!--The following two buttons take the user to the previous page or the next page.-->
 		<center>
-		      <a href="#home" class="w3-btn w3-black">Home</a>
+		<a href="#rubric" class="w3-btn w3-black">Rubric</a>
+		<a href="#home"	class="w3-btn w3-black">Home</a>
          	<a href="#two"  class="w3-btn w3-black">Next</a>
 		</center>
     	</div>
@@ -114,7 +137,7 @@ None
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p> PLACEHOLDER TEXT </p>
+	<p>The next step of this assignment is to [...]</p>
 		
 		<!--The following buttons take the user to the previous page or the next page.-->
 		<center>
@@ -136,7 +159,7 @@ None
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p> PLACEHOLDER TEXT </p>
+	<p>The third step of this assignment is to [...]</p>
 		
 		<!--The following buttons take the user to the previous page or the next page.-->
 		<center>
@@ -158,7 +181,7 @@ None
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p> PLACEHOLDER TEXT </p>
+	<p>The fourth step of this assignment is to [...]</p>
 		
 		<!--The following buttons take the user to the previous page or the final page.-->
 		<center>
@@ -180,7 +203,7 @@ None
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p> PLACEHOLDER TEXT </p>
+	<p>The final step of this assignment is to [...]</p>
 		
 		<!--The following buttons take the user to the previous page or the final page.-->
 		<center>
@@ -198,16 +221,16 @@ None
 	<!--Final Page.-->
 	
 	<div class="w3-container w3-flat-carrot">
-		<h1>Congratulations!</h1>
+		<h1>Good work.</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p> PLACEHOLDER TEXT </p>
+	<center><p>Congratulations! You have just completed your first DIY assignment. Make sure you have [...] Review the rubric at any time using the page directory below, and be sure to submit your assignment [...]</p>
 		
 		<!--The following buttons take the user to the previous page or the home page.-->
-		<center>
 		      <a href="#five"   class="w3-btn w3-black">Previous</a>
          	<a href="#home"   class="w3-btn w3-black">Home</a>
+		<a href="#rubric"	class="w3-btn w3-black">Rubric</a>
 		</center>
 	</div>
 </div>
@@ -216,14 +239,15 @@ None
 	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY! Go to page:
+	<center><p>DIY! Go to page:
+		<a href="#rubric">Rubric</a> 
 		<a href="#one">1</a> 
 		<a href="#two">2</a> 
 		<a href="#three">3</a> 
 		<a href="#four">4</a> 
 		<a href="#five">5</a> 
 		<a href="#six">End</a>
-		</p>
+		</p></center>
 </footer>
 
 </body>
